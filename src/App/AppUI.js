@@ -23,7 +23,7 @@ function AppUI() {
   return (
     <React.Fragment>
       <NavBar></NavBar>
-      <div className="row my-5">
+      <div className="row my-5 mx-3 mx-lg-0">
         <div className="col-xl-4 offset-xl-4 col-lg-6 offset-lg-3 col-md-8 offset-md-2 col-12">
           <TodoCounter />
           <hr />
