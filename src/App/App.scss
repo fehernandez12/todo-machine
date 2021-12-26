@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Quicksand&display=swap");
+/* Paleta de la aplicación:
+
+Se cambian los colores por defecto de Bootstrap 
+por la paleta personalizada, dejando el resto del
+trabajo al preprocesador.
+*/
+$darkest-blue: #010a26 !default;
+$dark-blue: #011640 !default;
+$regular-blue: #2469a6 !default;
+$dark-gray: #566573 !default;
+$mid-gray: #849199 !default;
+$regular-gray: #bacdd9 !default;
+$light-gray: #c5d9e6 !default;
+// Bootstrap variables
+
+// Colors
+$blue: #359af2 !default;
+$indigo: #4143f2 !default;
+$purple: #9e37f9 !default;
+$pink: #f24ed9 !default;
+$red: #f2554e !default;
+$orange: #f27d41 !default;
+$yellow: #f2cd29 !default;
+$green: #16ba52 !default;
+$teal: #1ef96e !default;
+$cyan: #2af9ec !default;
+
+$primary: $blue !default;
+$secondary: $mid-gray !default;
+$success: $green !default;
+$info: $cyan !default;
+$warning: $yellow !default;
+$danger: $red !default;
+$light: $light-gray !default;
+$dark: $dark-gray !default;
+
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "success": $success,
+  "info": $info,
+  "warning": $warning,
+  "danger": $danger,
+  "light": $light,
+  "dark": $dark,
+) !default;
+
+// Border radiuses
+$border-radius: 0.175rem;
+$border-radius-sm: 0.1rem;
+$border-radius-lg: 0.15rem;
+
+@import "~bootstrap/scss/bootstrap";
+
+body {
+  background-color: $dark-blue;
+  color: $light-gray;
+}
+
+.bg-dark-blue {
+  background-color: $dark-blue;
+}
+
+.bg-regular-blue {
+  background-color: $regular-blue;
+}
+
+.title-font {
+  font-family: "Montserrat", sans-serif;
+}
+
+.body-font {
+  font-family: "Quicksand", sans-serif;
+}
+
+.badge-icon {
+  font-size: 1.25em;
+}
