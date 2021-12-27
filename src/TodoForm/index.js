@@ -20,7 +20,7 @@ function TodoForm() {
         text: '¡Creaste un nuevo ToDo!',
         customClass: {
           container: 'body-font',
-          confirmButton: 'btn btn-success'
+          confirmButton: 'btn btn-primary'
         },
         buttonsStyling: false
       }
