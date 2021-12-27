@@ -46,10 +46,22 @@ $theme-colors: (
   "dark": $dark,
 ) !default;
 
+/* 
+Otras variables:
+Se cambian algunos bordes y colores para armonizar mejor con la paleta
+escogida arriba.
+*/
+
 // Border radiuses
 $border-radius: 0.175rem;
 $border-radius-sm: 0.1rem;
 $border-radius-lg: 0.15rem;
+
+// Modal background
+$modal-content-bg: $light-gray;
+$modal-content-border-color: $dark-gray;
+$modal-header-border-color: $dark-gray;
+$modal-footer-border-color: $dark-gray;
 
 @import "~bootstrap/scss/bootstrap";
 

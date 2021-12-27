@@ -35,7 +35,7 @@ function TodoForm() {
     <React.Fragment>
       <form onSubmit={onSubmit}>
         <div className="modal-header">
-          <h5 className="modal-title">Crear ToDo</h5>
+          <h6 className="modal-title">Crear ToDo</h6>
           <button className="btn-close" data-bs-dismiss="modal" type="button"></button>
         </div>
         <div className="modal-body">
@@ -45,8 +45,8 @@ function TodoForm() {
             </div>
         </div>
         <div className="modal-footer">
-          <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-          <button type="submit" className="btn btn-primary" data-bs-dismiss="modal">Crear ToDo</button>
+          <button type="button" className="btn btn-sm btn-warning" data-bs-dismiss="modal">Cerrar</button>
+          <button type="submit" className="btn btn-sm btn-primary" data-bs-dismiss="modal">Crear ToDo</button>
         </div>
       </form>
     </React.Fragment>
