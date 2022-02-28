@@ -13,6 +13,7 @@ function TodoForm() {
     event.preventDefault();
     addTodo(newTodoValue);
     setOpenModal(false);
+    setNewTodoValue('');
     Swal.fire(
       {
         icon: 'success',
