@@ -9,7 +9,7 @@ function TodoItem(props) {
           {props.text}
           </span>
           <span className={props.completed ? 'badge bg-success' : 'badge bg-danger'}>
-            {props.completed ? <span><i className="bi-check badge-icon"></i> Completado</span> : <span><i className="bi-x-circle badge-icon"></i> No completado</span>}
+            {props.completed ? (<i className="bi-check-lg badge-icon"></i>) : (<i className="bi-x-lg badge-icon"></i>)}
           </span>
         </div>
         <div className="card-body">
