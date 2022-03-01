@@ -1,31 +1,15 @@
 import React from "react";
-import { TodoContext } from "../TodoContext";
-import Swal from "sweetalert2";
+import { AlertHelper } from "../Utilities/Utils";
 
-function TodoForm() {
+function TodoForm({addTodo, setOpenModal}) {
   const [newTodoValue, setNewTodoValue] = React.useState('');
-  const {
-    addTodo,
-    setOpenModal
-  } = React.useContext(TodoContext);
 
   const onSubmit = (event) => {
     event.preventDefault();
     addTodo(newTodoValue);
     setOpenModal(false);
     setNewTodoValue('');
-    Swal.fire(
-      {
-        icon: 'success',
-        titleText: '¡Genial!',
-        text: '¡Creaste un nuevo ToDo!',
-        customClass: {
-          container: 'body-font',
-          confirmButton: 'btn btn-primary'
-        },
-        buttonsStyling: false
-      }
-    )
+    AlertHelper.alertSuccess('¡Genial!', '¡Creaste un nuevo ToDo!');
   };
 
   const onChange = (event) => {

@@ -1,11 +1,17 @@
 import React from "react";
-import { TodoContext } from "../TodoContext";
 import './TodoCounter.css';
 
-function TodoCounter() {
-	const { totalTodos, completedTodos } = React.useContext(TodoContext);
+function TodoCounter({totalTodos, completedTodos, loading}) {
 	return (
-		<h2 className="title-font TodoCounter">Has completado {completedTodos} de {totalTodos} ToDos</h2>
+		loading ?
+			(<h2 className="title-font TodoCounter">
+				<div className="spinner-grow">
+					<span className="visually-hidden">Loading...</span>
+				</div> Cargando...
+			</h2>) :
+			(<h2 className="title-font TodoCounter">
+				Has completado {completedTodos} de {totalTodos} ToDos
+			</h2>)
 	);
 }
 
