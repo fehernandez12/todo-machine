@@ -32,9 +32,13 @@ function useTodos() {
       return todo.text === key;
     });
     const newTodos = [...todos];
+    let completed = newTodos[todoIndex].completed;
     newTodos[todoIndex].completed = !newTodos[todoIndex].completed;
     saveTodos(newTodos);
-    AlertHelper.alertSuccess('¡Genial!', '¡Has cumplido la tarea \'' + key + '\'!');
+    AlertHelper.alertSuccess(
+      '¡Genial!',
+      completed ? '¡Has restaurado el ToDo \'' + key + '\'!': '¡Has cumplido el ToDo \'' + key + '\'!'
+      );
   };
   
   const deleteTodo = (text) => {
